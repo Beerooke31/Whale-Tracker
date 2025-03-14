@@ -1,7 +1,7 @@
 //Button to enter site
 
 function enterSite() {
-  window.location.href = "new-page.html";
+  window.location.href = "landing-page.html";
 }
 
 const siteButton = document
@@ -10,14 +10,12 @@ const siteButton = document
     enterSite();
   });
 
-//Using named functions can clean up your code considerably, and is a really good idea if the function is something that you are going to want to do in multiple places.
+//Menu toggle
 
-const buttons = document.querySelectorAll("button");
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    alert(button.id);
-  });
+toggle.addEventListener("click", function () {
+  toggle.classList.toggle("menu-toggle-active");
+  nav.classList.toggle("nav-active");
 });
-
-//A callback is a function that is passed into another function as an argument.
