@@ -1,18 +1,11 @@
-// Importing express module
 const express = require("express");
 const app = express();
+const port = 3000;
 
-// Handling GET / request
-app.use("/", (req, res, next) => {
-  res.send("Serving you Express!");
+app.get("/", function (req, res) {
+  res.send("Welcome to Express!");
 });
 
-// Handling GET /hello request
-app.get("/hello", (req, res, next) => {
-  res.send("hello response");
-});
-
-// Server setup
-app.listen(3000, () => {
-  console.log("Server is Running");
+app.listen(port, function () {
+  console.log(`Example app listening on port ${port}!`);
 });

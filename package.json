@@ -1,25 +1,17 @@
 {
-  "name": "whale_tracker",
-  "version": "1.0.0",
-  "description": "\"An application to display whale migration patterns.\"",
-  "keywords": [],
-  "homepage": "https://github.com/Beerooke31/Whale-Tracker#readme",
-  "bugs": {
-    "url": "https://github.com/Beerooke31/Whale-Tracker/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Beerooke31/Whale-Tracker.git"
-  },
-  "license": "ISC",
-  "author": "\"Brooke McGill\"",
-  "type": "commonjs",
-  "main": "main.js",
+  "name": "whale-tracker",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
     "express": "^4.21.2",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1",
     "pg": "^8.14.1"
   }
 }
